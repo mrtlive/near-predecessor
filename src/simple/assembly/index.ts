@@ -5,6 +5,11 @@ export function helloWorld(name:string): string {
   return 'hello world' +name
 }
 
+export function deneme(): string {
+  const predecessor = Context.predecessor
+  return 'hello' + predecessor
+}
+
 // read the given key from account (contract) storage
 export function read(key: string): string {
   if (storage.hasKey(key)) {
